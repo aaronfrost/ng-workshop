@@ -4,26 +4,26 @@
   </head>
   <body ng-controller="Feedback">
     <h1>Feedback 
-      <span ng-show="workshop.attendee">from {{workshop.attendee}}</span>
+      <span ng-show="workshop.attendee">de {{workshop.attendee}}</span>
     </h1>
     
-    Name <br/>
+    Nombre <br/>
     <input type="text" ng-model="workshop.attendee"></input><br/>
 
-    Score <br/> 
+    Voto <br/>
     <input type="text" ng-model="workshop.score"></input><br/>
 
     Feedback <br/>
     <textarea 
       ng-model="workshop.feedback"
-      placeholder="Reason for scoring a {{workshop.score || 0}}">
+      placeholder="Razon for votar {{workshop.score || 0}}">
     </textarea>
     <br/>
     {{workshop.feedback | amazing}}
 
     <checkhuman valid="client.isHuman"></checkhuman> <br/>
 
-    <button ng-disabled="!client.isHuman" ng-click="save(workshop)">Send Feedback</button> <br/>
+    <button ng-disabled="!client.isHuman" ng-click="save(workshop)">Enviar Feedback</button> <br/>
 
     <script src="angular.js"></script>
     <script src="app.js"></script>
