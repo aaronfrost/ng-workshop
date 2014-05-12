@@ -1,0 +1,14 @@
+{
+  "name": "ng-workshop",
+  "version": "0.0.1",
+  "description": "This is a sample AngularJS app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronfrost/ng-workshop.git"
+  },
+  "keywords": [
+    "angularjs",
+    "grunt"
+  ],
+  "license": "MIT"
+}
