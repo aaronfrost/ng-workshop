@@ -1,7 +1,7 @@
 angular.module('app').directive('checkhuman', function(){
   return {
     restrict: 'E',
-    templateUrl: 'check-human.html',
+    templateUrl: '../templates/check-human.html',
     scope: {
       valid: "=valid"
     },
