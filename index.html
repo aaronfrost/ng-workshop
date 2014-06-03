@@ -1,17 +1,19 @@
 <html ng-app="app">
 <head>
-  <link rel="stylesheet" href="css/bootstrap.css"></link>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="//localhost:35729/livereload.js"></script>
 </head>
 <body ng-controller="Feedback">
-<h1>Feedback
+<h1>MyFeedback
   <span ng-show="workshop.attendee">from {{workshop.attendee}}</span>
 </h1>
 
-Name <br/>
-<input type="text" ng-model="workshop.attendee"></input><br/>
+Name (please put your whole name) <br/>
+<input type="text" ng-model="workshop.attendee"><br/>
 
 Score <br/>
-<input type="text" ng-model="workshop.score"></input><br/>
+<input type="text" ng-model="workshop.score"><br/>
 
 Feedback <br/>
 <textarea
