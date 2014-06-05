@@ -26,11 +26,18 @@ module.exports = function(grunt){
         options:{livereload:true},
         files:['**.js']
       }
+    },
+    concat:{
+      js:{
+        src:['js/lib/angular.js','js/app.js','js/**.js'],
+        dest:'build/app.js'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('build', []);
 
