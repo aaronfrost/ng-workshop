@@ -32,12 +32,19 @@ module.exports = function(grunt){
         src:['js/lib/angular.js','js/app.js','js/**.js'],
         dest:'build/app.js'
       }
+    },
+    uglify:{
+      js:{
+        src:['build/app.js'],
+        dest:'build/app.js'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('build', []);
 
