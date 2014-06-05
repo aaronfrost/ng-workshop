@@ -38,6 +38,9 @@ module.exports = function(grunt){
         src:['build/app.js'],
         dest:'build/app.js'
       }
+    },
+    clean:{
+      build: 'build'
     }
   });
 
@@ -45,7 +48,8 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('build', []);
+  grunt.registerTask('build', ['clean:build', 'concat','uglify']);
 
 }
